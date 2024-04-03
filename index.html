@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureArt</title>
+    <link rel="icon" type="image/x-icon" href="image/logo/future-art-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- auto scroll  -->
+    <button class="page-auto-scroll d-none"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- header -->
+    <header>
+        <!-- mobile nav -->
+        <div class="mobile-overlay d-none"></div>
+        <nav class="mobile-navbar d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-start">
+                        <a href="/" class="header-logo"><img src="image/logo/future-art-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-6 col-end">
+                        <div class="right">
+                            <a href="#" class="m-phone m-right"><i class="fa-solid fa-phone"
+                                    aria-hidden="true"></i><span>*1111</span></a>
+                            <button class="search-button-mobile m-right" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#search-offcanvas">
+                                <i class="fa-solid fa-magnifying-glass" ></i>
+                            </button>
+                            <div class="dropdown language-dropdown m-right">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <a href="#">Az</a>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <div class="links">
+                                        <a href="#">En</a>
+                                        <a href="#">Ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="menu-button" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#header-mobile-menu">
+                                <i class="fa-sharp fa-solid fa-bars" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- mobile menu  -->
+        <div class="mobile-menu d-none " >
+            <div class="mobile-header">
+                <a class="header-logo" href="/">
+                    <img src="image/logo/future-art-logo.png" alt="logo">
+                </a>
+                <button class="close-button-mobile" >
+                    <i class="fa-solid fa-xmark" ></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="canvas-links page-navigation navigaton-scroll">
+                    <a data-id="1" >About</a>
+                    <a data-id="2" >Services</a>
+                    <a data-id="3" >Our Projects</a>
+                    <a data-id="4" >References</a>
+                    <a data-id="5" >Contact</a>
+                </div>
+                <div class="sosial-media2">
+                    <a href="#"><i class="fa-brands fa-facebook-f" ></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" ></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="canvas-links">
+                    <a href="#"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>*1111</span></a>
+                    <a href="#"><i class="fa-solid fa-phone" aria-hidden="true"></i><span>(055) 222 66 88</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- seachbar -->
+        <div class="bg-active"></div>
+        <div class="search-bar d-none">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <div class="search-input">
+                            <form action="">
+                                <input class="form-control" type="text" placeholder="Search...">
+                                <button><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-2 col-end">
+                        <button class="close-button" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main nav -->
+        <nav class="main-header d-none d-lg-flex  fixed navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="/" class="main-logo"><img src="image/logo/future-art-logo.png" alt=""></a>
+                    </div>
+                    <div class="col-10">
+                        <div class="right-side">
+                            <div class="first">
+                                <div class="social-media">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                                <div class="language">
+                                    <a class="language-change language-active" href="#">AZ</a>
+                                    <a class="language-change" href="#">EN</a>
+                                    <a class="language-change" href="#">RU</a>
+                                </div>
+                            </div>
+
+                            <div class="last">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="navigation-menu nav-active navigaton-scroll">
+                                            <a data-id="1" >About</a>
+                                            <a data-id="2" >Services</a>
+                                            <a data-id="3" >Our Projects</a>
+                                            <a data-id="4" >References</a>
+                                            <a data-id="5" >Contact</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="side-icon">
+                                            <button class="search-button"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                            <a href="#" class="pdf-link"><i class="fa-regular fa-file-pdf "></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <section class="banner scroll-to" >
+        <div class="swiper swiper1 banner-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image/banner-swiper/img-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="image/banner-swiper/img-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="image/banner-swiper/img-1.png" alt=""></div>
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="heading">
+                <p>The Standart Lorem Ipsum Passage</p>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate totam laboriosam eius? Quo labore
+                    nihil nostrum veritatis eius! Porro mollitia unde, eum exercitationem vel impedit adipisci
+                    dignissimos reiciendis rerum maxime.</p>
+            </div>
+            <a class="about" href="">
+                <div> More</div>
+            </a>
+        </div>
+
+    </section>
+    <!-- about  -->
+    <section class="about-section scroll-to"    data-id="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="about-image">
+                        <img src="image/about/img-1.png" alt="" class="first-image">
+                        <img src="image/about/img-2.png" alt="" class="second-image">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="content">
+                        <div class="section-title">
+                            <img src="image/logo/title-logo.png" alt="">
+                            <h1>Why Us?</h1>
+                        </div>
+                        <div class="text-about">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate totam laboriosam
+                                eius?
+                                Quo labore nihil nostrum veritatis eius! Porro mollitia unde, eum exercitationem vel
+                                impedit
+                                adipisci dignissimos reiciendis rerum maxime.
+                            </p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate totam laboriosam
+                                eius?
+                                Quo labore nihil nostrum veritatis eius! Porro mollitia unde, eum exercitationem vel
+                                impedit
+                                adipisci dignissimos reiciendis rerum maxime.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- services  -->
+    <section class="services-section scroll-to" data-id="2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title-col">
+                    <div class="section-title">
+                        <img src="image/logo/title-logo.png" alt="">
+                        <h1>Services</h1>
+                    </div>
+                    <div class="txt-small">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit facilis veritatis
+                            laudantium. Eligendi saepe</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 ">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-1.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-1.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>DESIGN</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 ">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-2.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-2.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>CONSTRUCTION</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 ">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-3.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-3.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>MEP</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 col-xl-3 ">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-4.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-4.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>ENERGY</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 col-xl-3">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-5.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-5.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>TRADE</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6  col-md-4 col-xl-3">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-6.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-6.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>SOLAR</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-3 ">
+                    <div class="service-card">
+                        <img src="image/service/normal/img-7.png" alt="" class="normal-logo">
+                        <img src="image/service/white/img-7.svg" alt="" class="white-logo">
+
+                        <div class="title-services">
+                            <p>INDUSTRY</p>
+                        </div>
+                        <div class="txt-services">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi non perspiciatis voluptatem error totam eveniet autem
+                                aspernatur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- projects  -->
+    <section class="project-section scroll-to" data-id="3">
+        <div class="container">
+            <div class="section-title mb-5">
+                <img src="image/logo/title-logo.png" alt="">
+                <div>Our Projects</div>
+            </div>
+
+
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="image/project/img-1.png" class="project-card" data-fancybox
+                            data-src="image/project/img-1.png">
+                            <img src="image/project/img-1.png" alt="">
+                            <div class="hover-screen">
+                                <img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="image/project/img-2.png" class="project-card" data-fancybox
+                            data-src="image/project/img-2.png">
+                            <img src="image/project/img-2.png" alt="">
+                            <div class="hover-screen"><img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="image/project/img-3.png" class="project-card" data-fancybox
+                            data-src="image/project/img-3.png">
+                            <img src="image/project/img-3.png" alt="">
+                            <div class="hover-screen"><img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="image/project/img-4.png" class="project-card" data-fancybox
+                            data-src="image/project/img-4.png">
+                            <img src="image/project/img-4.png" alt="">
+                            <div class="hover-screen"><img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="image/project/img-5.png" class="project-card" data-fancybox
+                            data-src="image/project/img-5.png">
+                            <img src="image/project/img-5.png" alt="">
+                            <div class="hover-screen"><img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="image/project/img-6.png" class="project-card" data-fancybox
+                            data-src="image/project/img-6.png">
+                            <img src="image/project/img-6.png" alt="">
+                            <div class="hover-screen"><img src="image/project/fullscreen-icon.png" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="swiper swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-1.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-2.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-3.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-4.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-5.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <img src="image/project/img-6.png" alt="">
+                            <div class="hover-screen">
+                                <a href="image/project/img-1.png" data-fancybox data-src="image/project/img-1.png"
+                                    class="play-button">
+                                    <i class="fa-solid fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <!-- counter  -->
+    <section class="counter-section scroll-to " data-id="4">
+        <div class="container">
+            <div class=" counters row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="counter-item">
+                        <div class="counter-div" data-val="260">
+                            0
+                        </div>
+                        <div class="name">Projects</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="counter-item">
+                        <div class="counter-div" data-val="420">
+                            0
+                        </div>
+                        <div class="name">Customer</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="counter-item">
+                        <div class="counter-div" data-val="10">
+                            0
+                        </div>
+                        <div class="name">Experience</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <a href="#" class="pdf-download-icon">
+                        <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                        <h1>References</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- comment  -->
+    <section class="comment-section " >
+        <div class="container">
+            <div class="section-title-comment mb-5">
+                <img src="image/logo/title-logo.png" alt="">
+                <div>Customer comments</div>
+            </div>
+            <div class="swiper swiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment-content">
+                                <div class="name">
+                                    <p>Josh Hale</p>
+                                </div>
+                                <div class="raiting">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                </div>
+                                <div class="comment-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Asperiores quas illo eos quia quisquam cum non accusamus
+                                        repellat sed? Illo numquam deserunt facilis commodi neque
+                                        velit, accusamus ea eaque temporibus in nulla atque modi
+                                        laborum mollitia distinctio maiores incidunt veritatis quam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-image">
+                                <img src="image/comment/user.png">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment-content">
+                                <div class="name">
+                                    <p>Eva Chris</p>
+                                </div>
+                                <div class="raiting">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                </div>
+                                <div class="comment-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Asperiores quas illo eos quia quisquam cum non accusamus
+                                        repellat sed? Illo numquam deserunt facilis commodi neque
+                                        velit, accusamus ea eaque temporibus in nulla atque modi
+                                        laborum mollitia distinctio maiores incidunt veritatis quam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-image">
+                                <img src="image/comment/user.png">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comment">
+                            <div class="comment-content">
+                                <div class="name">
+                                    <p>Jacob Marc</p>
+                                </div>
+                                <div class="raiting">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                    <img src="image/comment/star.png">
+                                </div>
+                                <div class="comment-text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Asperiores quas illo eos quia quisquam cum non accusamus
+                                        repellat sed? Illo numquam deserunt facilis commodi neque
+                                        velit, accusamus ea eaque temporibus in nulla atque modi
+                                        laborum mollitia distinctio maiores incidunt veritatis quam
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-image">
+                                <img src="image/comment/user.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact  -->
+    <section class="contact-section mt-5 scroll-to" data-id="5">
+        <div class="container">
+            <div class="row general-row">
+                <div class="col-12 col-lg-4 dropdown-col">
+                    <div class="contact-dropdown">
+                        <button class="active-button">
+                            <span></span>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="address-menu d-none">
+                            <button data-id="1">New York Office</button>
+                            <button data-id="2">Florida Office</button>
+                            <button data-id="3">Berlin Office</button>
+                            <button data-id="4">London Office</button>
+                            <button data-id="5">Frankurt Office</button>
+                            <button data-id="6">Munich Office</button>
+                            <button data-id="7">Rome Office</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row address-row d-none" data-id="1">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>New York Office</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="2">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>Florida Office</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="3">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>Berlin Oficce</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="4">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>London Office</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="5">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>Frankurt Ofis</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="6">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>Munich Office</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row address-row d-none" data-id="7">
+                        <div class="col-12 col-md-6">
+                            <div class="swiper swiper5 contact-image-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="image/contact/img-1.png">
+                                    </div>
+                                </div>
+                                <div class="navigation-button">
+                                    <div class="swiper-button-prev">
+                                        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="address-content">
+                                <div class="title">
+                                    <p>Rome Office</p>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Location:</span>
+                                    <div class="links">
+                                        <a href="#">Manhattan</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Tel:</span>
+                                    <div class="links">
+                                        <a href="#">(050) 555 34 21</a>
+                                        <a href="#">(012) 456 78 90</a>
+                                    </div>
+                                </div>
+                                <div class="links-wrapper">
+                                    <span>Mail:</span>
+                                    <div class="links">
+                                        <a href="#">office@future.az</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer style="background-image: url(image/background/footer-design.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-center my-5">
+                    <a class="footer-logo" href="/"><img src="image/logo/future-art-footer-logo.png" alt="logo"></a>
+                </div>
+                <div class="col-12 col-md-9 col-lg-6 col-center">
+                    <div class="footer-links page-navigation row">
+                        <div class="col-12 col-md-6">
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Our Projects</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="#">References</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-lg-3 col-center">
+                    <div class="footer-links second">
+                        <a href="#">*1111</a>
+                        <a href="#">(055) 222 66 88</a>
+                        <div class="sosial-icons">
+                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="fancybox.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
